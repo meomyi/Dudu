@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxgyen | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+Arabic:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <button class="lang-switch" id="langBtn" onclick="toggleLanguage()">العربية</button>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <main class="profile-card">
+        <div class="avatar-container">
+            <img src="https://cdn.discordapp.com/attachments/1333067682387333281/1471290445052252281/3TS90akY.jpg" alt="Oxgyen" class="avatar">
+        </div>
+        <h1 class="name" id="name">Oxgyen</h1>
+        <p class="username">@ungr</p>
+    </main>
+
+    <aside class="side-menu" id="sideMenu">
+        <a class="menu-link" onclick="openPanel('aboutPanel')" id="menuAbout">About Me</a>
+        <a class="menu-link" onclick="openPanel('hobbyPanel')" id="menuHobbies">Hobbies</a>
+        <a href="mailto:oxgyen@imungr.xyz" class="menu-link" id="menuContact">Contact Me</a>
+    </aside>
+
+    <div class="panel" id="aboutPanel">
+        <div class="panel-content">
+            <p id="aboutText">I’m a heart failure stage 3 patient, please be kind to me and pray for us all.</p>
+            <button class="close-panel" onclick="closePanels()" id="closeBtn1">Close</button>
+        </div>
+    </div>
+
+    <div class="panel" id="hobbyPanel">
+        <div class="panel-content no-bg">
+            <p class="hobby-text" id="hobbyContent">maybe sleeping</p>
+            <button class="close-panel" onclick="closePanels()" id="closeBtn2">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
